@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // Incorrect way to add event listener
+    document.getElementById('myDiv').onclick = function() {
+      alert('Hello!');
+    };
+
+    //Another potential error
+    document.getElementById('nonExistentElement').addEventListener('click', function(){
+        alert("This will throw an error");
+    });
+  </script>
+</body>
+</html>
